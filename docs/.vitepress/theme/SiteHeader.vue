@@ -10,6 +10,7 @@ import { MAppBar, MButton, MIconButton } from 'material/vue'
 import lightIcon from '@material-design-icons/svg/outlined/light_mode.svg?raw'
 import darkIcon from '@material-design-icons/svg/outlined/dark_mode.svg?raw'
 import activityIcon from '@material-design-icons/svg/outlined/timeline.svg?raw'
+import infoIcon from '@material-design-icons/svg/outlined/info.svg?raw'
 import menuIcon from '@material-design-icons/svg/outlined/menu.svg?raw'
 import closeIcon from '@material-design-icons/svg/outlined/close.svg?raw'
 import backIcon from './icons/expressive-back.svg?raw'
@@ -103,6 +104,13 @@ onUnmounted(() => {
         <span class="appbar-page-title">{{ pageTitle }}</span>
       </div>
       <template #trailing>
+        <a
+          v-if="home"
+          class="appbar-activity"
+          :href="withBase('/about.html')"
+          aria-label="关于我们"
+          title="关于我们"
+        ><span aria-hidden="true" v-html="infoIcon" /></a>
         <a
           v-if="home"
           class="appbar-activity"

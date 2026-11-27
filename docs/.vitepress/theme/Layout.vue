@@ -6,6 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useData } from 'vitepress'
+import AboutPage from './AboutPage.vue'
 import ActivityPage from './ActivityPage.vue'
 import ChangelogPage from './ChangelogPage.vue'
 import HomePage from './HomePage.vue'
@@ -27,7 +28,8 @@ const docs = computed(() => /^(building|project-docs)\//.test(page.value.relativ
       :docs="docs"
       back
     />
-    <ActivityPage v-if="page.relativePath === 'activity.md'" />
+    <AboutPage v-if="page.relativePath === 'about.md'" />
+    <ActivityPage v-else-if="page.relativePath === 'activity.md'" />
     <ChangelogPage v-else-if="page.relativePath === 'changelog.md'" />
     <div v-else-if="docs" class="docs-layout">
       <aside class="docs-sidebar"><DocsNavigation /></aside>
