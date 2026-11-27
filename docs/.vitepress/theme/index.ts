@@ -6,6 +6,7 @@
 import type { Theme } from 'vitepress'
 import Layout from './Layout.vue'
 import '@fontsource-variable/google-sans'
+import '@fontsource-variable/jetbrains-mono'
 import '@fontsource-variable/outfit'
 import 'material/styles/base-elements'
 import 'material/styles/typography'

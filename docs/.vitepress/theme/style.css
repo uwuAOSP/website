@@ -22,6 +22,7 @@
 * { box-sizing: border-box; }
 body { margin: 0; min-width: 320px; }
 a { color: inherit; }
+pre, code { font-family: "JetBrains Mono Variable", "Noto Sans Mono CJK SC", ui-monospace, monospace; }
 svg { display: block; width: 24px; height: 24px; fill: currentColor; }
 
 m-button {
