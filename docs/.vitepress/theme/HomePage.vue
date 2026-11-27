@@ -101,7 +101,7 @@ function openProjectLink(url: string) {
 
     <footer class="site-footer">
       <span class="brand-wordmark">uwuAOSP</span>
-      <span>由社区共同构建</span>
+      <a href="https://uwuaosp-legacy.uwuniverse.org">旧版页面</a>
     </footer>
     </div>
   </div>
