@@ -1,0 +1,25 @@
+{
+  "name": "uwuaosp-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs --host 127.0.0.1 --port 4173",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "python3 -m http.server 4173 --bind 127.0.0.1 --directory docs/.vitepress/dist"
+  },
+  "dependencies": {
+    "@fontsource-variable/google-sans": "5.3.2",
+    "@fontsource-variable/outfit": "5.3.0",
+    "@material-design-icons/svg": "0.14.15",
+    "material": "3.16.6",
+    "vue": "3.5.30"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "14.2.0",
+    "markdown-it": "15.0.3",
+    "vitepress": "1.6.4",
+    "yaml": "2.9.1"
+  },
+  "packageManager": "pnpm@12.17.0"
+}

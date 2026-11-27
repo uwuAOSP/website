@@ -1,0 +1,7 @@
+node_modules/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+activity/.cloudflare/
+activity/dist/
+activity/.dev.vars*
+.env*
