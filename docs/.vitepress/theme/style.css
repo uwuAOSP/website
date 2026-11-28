@@ -101,6 +101,17 @@ m-button {
   color: var(--mtrl-sys-color-on-surface-variant);
   text-decoration: none;
 }
+.appbar-activity-link {
+  inline-size: auto;
+  block-size: 40px;
+  padding-inline: 12px 16px;
+  gap: 8px;
+  border: 1px solid var(--mtrl-sys-color-outline-variant);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.appbar-activity-link svg { width: 18px; height: 18px; }
 @media (hover: hover) {
   .appbar-activity:hover { background: var(--mtrl-sys-color-surface-container-high); }
 }

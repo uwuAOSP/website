@@ -105,11 +105,12 @@ onUnmounted(() => {
       <template #trailing>
         <a
           v-if="home"
-          class="appbar-activity"
+          class="appbar-activity appbar-activity-link"
           :href="withBase('/activity.html')"
-          aria-label="项目动态"
-          title="项目动态"
-        ><span aria-hidden="true" v-html="activityIcon" /></a>
+        >
+          <span aria-hidden="true" v-html="activityIcon" />
+          项目动态
+        </a>
         <button
           v-if="docs"
           type="button"
@@ -122,6 +123,7 @@ onUnmounted(() => {
         ><span aria-hidden="true" v-html="menuIcon" /></button>
         <MIconButton
           :class="{ 'docs-desktop-theme': docs }"
+          variant="outlined"
           :icon="dark ? lightModeIcon : darkModeIcon"
           :aria-label="dark ? '切换到浅色模式' : '切换到深色模式'"
           @click="toggleAppearance"
