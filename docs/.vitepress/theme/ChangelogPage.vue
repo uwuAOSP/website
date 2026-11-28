@@ -77,7 +77,7 @@ import { data as releases } from '../changelog.data'
 .release-body :deep(ol) { list-style: decimal; }
 .release-body :deep(li + li) { margin-top: 6px; }
 .release-body :deep(li > p) { margin: 0; }
-.release-body :deep(h3) { margin: 24px 0 8px; font-size: 18px; line-height: 1.45; }
+.release-body :deep(h3) { margin: 24px 0 8px; font-size: 18px; font-weight: 700; line-height: 1.45; }
 .release-body :deep(a) { color: var(--mtrl-sys-color-primary); text-underline-offset: 3px; }
 .release-body :deep(pre) {
   padding: 12px 16px;
